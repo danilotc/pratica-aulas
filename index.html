@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=320px, initial-scale=1.0">
-    <title>Links</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Cores e estilo</title>
+
+    <style>
+        #css-head {
+            font-size: 25px;
+            color: green;
+        }
+    </style>
 </head>
 <body>
-    <!-- Links e Hiperlinks -->
-    <a href="https://google.com" target="_blank">
-        <p>Clique para abrir a página do Google em outra aba (_black)</p>
-    </a>
+    <!-- Aplicando CSS inline -->
+    <p style="color: red; font-size: 35px;" href="https://google.com" target="_blank">
+        CSS inline
+    </p>
 
-    <!-- Este script permite abrir outros conteúdos dentro de um iframe -->
-    <a href="https://g1.globo.com" target="g1_iframe">
-        <p>Clique para abrir a página do G1 dentro do iframe</p>
-    </a>
-    <iframe name="g1_iframe" width="800px" height="400px"></iframe>
+    <!-- Aplicando CSS a partir da tag style -->
+    <p id="css-head" href="https://google.com" target="_blank">
+        CSS na tag style
+    </p>
+
+    <!-- Aplicando CSS a partir de arquivo externo -->
+    <p id="css-externo" href="https://google.com" target="_blank">
+        CSS externo
+    </p>
 </body>
 </html>
