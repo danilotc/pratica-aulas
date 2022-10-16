@@ -5,39 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=320px, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
-    <title>Listas</title>
+    <title>Tabela</title>
 </head>
 <body>
-    <h1>Listas</h1>
-
-    <h2>Ordenada / Não ordenada</h2>
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <ul>
-            <li>Item 1</li>
-        </ul>
-    </ul>
-
-    <ol>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <ol class="list">
-            <li>Item 1</li>
-        </ol>
-    </ol>
+    <!-- 
+        colspan="" >> mescla linhas
+        rowspan="" >> mescla colunas
+     -->
+     <table width="40%" height="500px" border="1" cellspacing="5" cellpadding="10">
+        <!-- cabeçalho -->
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Quantidade</th>
+            </tr>
+        </thead>
+        <!-- corpo -->
+        <tbody valign="top">
+            <tr>
+                <td abbr="Identificador" bgcolor="red">Id</td>
+                <td rowspan="2">Produto 1</td>
+                <td align="right">1</td>
+            </tr>
+            <tr>
+                <td>Id</td>
+                <!-- <td>Produto 2</td> -->
+                <td align="right">2</td>
+            </tr>
+        </tbody>
+        <!-- rodapé -->
+        <tfoot>
+            <tr>
+                <td colspan="2">Quantidade</td>
+                <td align="right">2</td>
+            </tr>
+        </tfoot>
+    </table>
 
     <hr>
 
-    <h2>Definição</h2>
-    <dl>
-        <dt>Brave</dt>
-        <dd>Navegador amplamente utilizado</dd>
-        <dd>É um tipo de leão</dd>
-        <dt>Chrome</dt>
-        <dd>Navegador do Google</dd>
-    </dl>
+    <table border="1" cellspacing="4" cellpadding="4">
+        <thead bgcolor="grey">
+            <tr>
+                <th>Matriculo</th>
+                <th>Nome</th>
+                <th>Jan/2022 - 1</th>
+                <th>Jan/2022 - 2</th>
+                <th>Jan/2022 - 3</th>
+                <th>Jan/2022 - 4</th>
+                <th>Fev/2022 - 1</th>
+                <th>Fev/2022 - 2</th>
+                <th>Fev/2022 - 3</th>
+                <th>Fev/2022 - 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>João T.</td>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+                <td>F</td>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Maria C.</td>
+                <td>F</td>
+                <td>.</td>
+                <td>.</td>
+                <td>F</td>
+                <td>.</td>
+                <td>F</td>
+                <td>.</td>
+                <td>.</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Joaquim A.</td>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
