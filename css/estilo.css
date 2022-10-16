@@ -18,3 +18,7 @@
 .align-right {
     text-align: right;
 }
+
+.list {
+    list-style: none;
+}
