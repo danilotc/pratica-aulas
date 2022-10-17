@@ -22,3 +22,39 @@
 .list {
     list-style: none;
 }
+
+/* Estilizando botões */
+
+/* Estilo padrão */
+.btn {
+    font-family: arial;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight:  bold;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Cor */
+.btn-green {
+    background: green;
+    color: #fff;
+    box-shadow: 0 5px 0 #006000;
+}
+
+/* Comportamento ao passar o mouse */
+.btn-green:hover {
+    background: #006000;
+    color: #fff;
+    box-shadow: 0 5px 0 #003f00;
+}
+
+/* Comportamento ao clicar */
+.btn-green:active {
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+}
