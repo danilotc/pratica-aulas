@@ -30,11 +30,16 @@
         <!-- Combobox -->
         <fieldset>
             <select name="curso" id="curso">
-                <option name="empty">Selecione...</option>
-                <option name="html">HTML</option>
-                <option name="css">CSS</option>
-                <option name="js">JavaScript</option>
-                <option name="java" selected>Java</option>
+                <optgroup label="Frontend">
+                    <option name="html">HTML</option>
+                    <option name="css">CSS</option>
+                    <option name="js">JavaScript</option>
+                </optgroup>
+                <optgroup label="Backend">
+                    <option name="java" selected>Java</option>
+                    <option value="csharp">C#</option>
+                    <option value="php">PHP</option>
+                </optgroup>
             </select>
         </fieldset>
 
